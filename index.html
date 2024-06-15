@@ -4,7 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple-Ware iOS</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #444;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .version {
+            font-size: 14px;
+            color: #ff69b4;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .profile, .developers, .discord {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-status p {
+            margin: 5px 0;
+        }
+
+        .active {
+            color: #00ff00;
+        }
+
+        .expiry-time {
+            color: #ff69b4;
+        }
+
+        .progress-bar {
+            background: #444;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress {
+            background: #ff69b4;
+            height: 10px;
+        }
+
+        .restore-key {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .script {
+            margin-top: 20px;
+        }
+
+        .script h3 {
+            margin: 0;
+        }
+
+        .run-script {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .developers h3, .discord h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .developer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .developer-info {
+            background: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .role {
+            display: block;
+            margin-top: 5px;
+            color: #ff69b4;
+        }
+
+        .discord-link {
+            display: block;
+            background: #7289da;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -59,6 +208,14 @@
             </section>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.querySelector('.restore-key').addEventListener('click', function() {
+            alert('Key restored!');
+        });
+
+        document.querySelector('.run-script').addEventListener('click', function() {
+            alert('Script running!');
+        });
+    </script>
 </body>
 </html>
