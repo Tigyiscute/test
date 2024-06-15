@@ -14,7 +14,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -27,6 +27,12 @@
             border-bottom: 2px solid #444;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         .logo h1 {
             margin: 0;
             font-size: 24px;
@@ -35,6 +41,9 @@
         .version {
             font-size: 14px;
             color: #ff69b4;
+            background: #2e2e2e;
+            padding: 2px 8px;
+            border-radius: 5px;
         }
 
         nav ul {
@@ -69,8 +78,18 @@
             align-items: center;
         }
 
+        .profile-header h2 {
+            margin: 0;
+        }
+
+        .profile-status {
+            margin-top: 20px;
+        }
+
         .profile-status p {
             margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
         }
 
         .active {
@@ -153,6 +172,13 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        .profile-header .premium {
+            background: #ff69b4;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -173,8 +199,9 @@
             <section class="profile">
                 <div class="profile-header">
                     <h2>TakeModzz</h2>
-                    <span class="username">@takemodzz123</span>
+                    <span class="premium">PREMIUM</span>
                 </div>
+                <span class="username">@takemodzz123</span>
                 <div class="profile-status">
                     <p>Key Status: <span class="active">Active</span></p>
                     <p>Expires in: <span class="expiry-time">23h - 59m</span></p>
